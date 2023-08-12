@@ -1,6 +1,4 @@
 public class SavingsAccount extends BankAccount {
-    private double interestRate;
-    private boolean isInterestCompoundedMonthly;
 
 
 
@@ -20,14 +18,6 @@ public class SavingsAccount extends BankAccount {
         this.accountHolderName = accountHolderName;
     }
 
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     public String getAccountType() {
         return accountType;
     }
@@ -36,24 +26,6 @@ public class SavingsAccount extends BankAccount {
         this.accountType = accountType;
     }
 
-
-
-
-    public double getInterestRate() {
-        return interestRate;
-    }
-
-    public void setInterestRate(double interestRate) {
-        this.interestRate = interestRate;
-    }
-
-    public boolean isInterestCompoundedMonthly() {
-        return isInterestCompoundedMonthly;
-    }
-
-    public void setInterestCompoundedMonthly(boolean interestCompoundedMonthly) {
-        this.isInterestCompoundedMonthly = interestCompoundedMonthly;
-    }
 
 
 }
