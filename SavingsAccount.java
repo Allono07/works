@@ -3,16 +3,40 @@ public class SavingsAccount extends BankAccount {
     private boolean isInterestCompoundedMonthly;
 
 
-    public SavingsAccount() {
-        super();
+
+    public int getAccountNumber() {
+        return accountNumber;
     }
 
-    public SavingsAccount(int accountNumber, String accountHolderName, double balance, String accountType,
-                          double interestRate, boolean isInterestCompoundedMonthly) {
-        super(accountNumber, accountHolderName, balance, accountType);
-        this.interestRate = interestRate;
-        this.isInterestCompoundedMonthly = isInterestCompoundedMonthly;
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
     }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
+    }
+
+
 
 
     public double getInterestRate() {
