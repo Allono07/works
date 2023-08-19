@@ -1,8 +1,11 @@
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SavingsAccountManager {
     public static void main(String[] args) {
+        int n=0;
 
 //        List<SavingsAccount> savingsAccountsList = new ArrayList<>();
 //        Scanner scanner = new Scanner(System.in);
@@ -49,8 +52,9 @@ public class SavingsAccountManager {
 //        }
         Scanner sc = new Scanner(System.in);
         ArrayList<SavingsAccount> savingsAccounts = new ArrayList<>();
-        for(int i=0;i<2;i++){
+        for(int i=0;i<1;i++){
             SavingsAccount savingsAccount = new SavingsAccount();
+
             System.out.println("Enter the account holder name");
             savingsAccount.setAccountHolderName(sc.next());
             System.out.println("Enter the account number");
@@ -61,7 +65,18 @@ public class SavingsAccountManager {
         }
         for(SavingsAccount savingsAccount : savingsAccounts) {
             System.out.println("Enter the account number to check");
-             int n = sc.nextInt();
+
+            try{
+                 n = sc.nextInt();
+            }
+            catch (InputMismatchException e) {
+                String message = e.getMessage();
+                System.out.println("Invalid input. " + message);
+               // System.out.println("Enter the input again");
+            }
+
+
+
             if (savingsAccount.getAccountNumber()==n) {
                 System.out.println();
                 System.out.println("Name:" + savingsAccount.getAccountHolderName());
