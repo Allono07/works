@@ -10,19 +10,19 @@ public class SavingsAccount extends BankAccount {
         this.accountNumber = accountNumber;
     }
 
-    public String getAccountHolderName() {
+    public StringBuilder getAccountHolderName() {
         return accountHolderName;
     }
 
-    public void setAccountHolderName(String accountHolderName) {
+    public void setAccountHolderName(StringBuilder accountHolderName) {
         this.accountHolderName = accountHolderName;
     }
 
-    public String getAccountType() {
+    public StringBuffer getAccountType() {
         return accountType;
     }
 
-    public void setAccountType(String accountType) {
+    public void setAccountType(StringBuffer accountType) {
         this.accountType = accountType;
     }
 
