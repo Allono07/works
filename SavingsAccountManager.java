@@ -11,11 +11,14 @@ public class SavingsAccountManager {
 
        Scanner sc = new Scanner(System.in);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder bld = new StringBuilder();
         ArrayList<SavingsAccount> savingsAccounts = new ArrayList<>();
         for(int i=0;i<1;i++){
             SavingsAccount savingsAccount = new SavingsAccount();
             System.out.println("Enter the account holder name");
-            savingsAccount.setAccountHolderName(new StringBuilder(reader.readLine()));
+            String name = reader.readLine();
+            bld.append(name);
+           // savingsAccount.setAccountHolderName(bld.reader.readLine());
             System.out.println("Enter the account number");
             savingsAccount.setAccountNumber(sc.nextInt());
             System.out.println("Enter the account tyoe");
