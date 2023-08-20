@@ -12,7 +12,7 @@ public class Main {
         }
         System.out.println();
     }
-    public void printAtoZ(){
+    public void printAtoZ()throws InterruptedException{
         for(char i='a';i<='z';i++){
             System.out.print(i);
         }
