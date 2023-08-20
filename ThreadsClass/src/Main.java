@@ -6,9 +6,9 @@ public class Main {
         PrintNumbers printNumbers = new PrintNumbers();
         printNumbers.start();*/
         PrintEven even = new PrintEven();
-        Thread PrintEven = new Thread(even);
+        Thread PrintEven = new Thread(even); // Runnable interface is used
         PrintEven.start();
-        PrintOdd odd = new PrintOdd();
+        PrintOdd odd = new PrintOdd();// Thread Class is used
         odd.start();
 
     }
