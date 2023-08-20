@@ -13,7 +13,7 @@ public class PrintAtoZ extends Thread {
     }*/
     public void printAtoZ() throws InterruptedException{
         for(char i='a';i<='z';i++){
-            System.out.println(i);
+            System.out.print(i);
             Thread.sleep(1000);
         }
     }

@@ -1,20 +1,15 @@
 public class Main {
     public static void main(String[] args) {
        // System.out.println("Hello world!");
-        PrintAtoZ printAtoZ = new PrintAtoZ();
+      /*  PrintAtoZ printAtoZ = new PrintAtoZ();
         printAtoZ.start();
         PrintNumbers printNumbers = new PrintNumbers();
-        printNumbers.start();
+        printNumbers.start();*/
+        PrintEven even = new PrintEven();
+        even.start();
+        PrintOdd odd = new PrintOdd();
+        odd.start();
+
     }
-    public void printNumbers(){
-        for(int i=0;i<=9;i++){
-            System.out.print(i);
-        }
-        System.out.println();
-    }
-    public void printAtoZ()throws InterruptedException{
-        for(char i='a';i<='z';i++){
-            System.out.print(i);
-        }
-    }
+
 }
