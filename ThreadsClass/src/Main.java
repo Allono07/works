@@ -6,7 +6,8 @@ public class Main {
         PrintNumbers printNumbers = new PrintNumbers();
         printNumbers.start();*/
         PrintEven even = new PrintEven();
-        even.start();
+        Thread PrintEven = new Thread(even);
+        PrintEven.start();
         PrintOdd odd = new PrintOdd();
         odd.start();
 

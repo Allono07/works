@@ -1,4 +1,4 @@
-public class PrintEven extends Thread{
+public class PrintEven implements Runnable{
     public void run(){
         try {
             printEven();
